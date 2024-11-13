@@ -1,0 +1,10 @@
+name: basic
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: g++ -o cli client.cpp 
+      - run: ./cli 192.168.0.10 5050
+      

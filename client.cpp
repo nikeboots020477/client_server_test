@@ -9,7 +9,7 @@
 #include <string.h>
 
 //My IP address 192.168.0.10 
-//Port 5050
+
 
 int main(int argc, char *argv[]){
 

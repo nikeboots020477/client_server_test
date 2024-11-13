@@ -35,6 +35,7 @@ serv_addr.sin_addr.s_addr = inet_addr(IP);
 
 if(connect(sock, (struct sockaddr *) & serv_addr, sizeof(serv_addr)) < 0){
     perror("connect");
+    std::cerr<<"cant find";
     exit(2);
 }
 
